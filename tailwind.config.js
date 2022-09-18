@@ -8,7 +8,8 @@ module.exports = {
         grotesk: ["Space Grotesk", "sans-serif"]
       },
       colors: {
-        lightPurple: "#CDB9F2"
+        lightPurple: "#CDB9F2",
+        commColor: "#365B6D"
       },
       borderWidth: {
         DEFAULT: "1px",
