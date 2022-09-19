@@ -6,19 +6,14 @@ import Image from "next/image";
 
 export const AppBar: FC = () => {
   return (
-    <nav className="flex justify-between bg-white text-black font-grotesk font-bold shadow-md">
+    <nav className="flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md">
       <div className="mt-2 ml-10">
-        <Image src={cerritusCodersLogo} height={80} width={160} />
+        <Image src={cerritusCodersLogo} height={107} width={214} />
       </div>
-      <div
-        className={`hidden lg:flex mr-3 md:items-center transition-all duration-500 ease-in`}
-      >
+      <div className={`hidden lg:flex mr-3 md:items-center transition-all duration-500 ease-in`}>
         {navLinks.map((link, index) => {
           return (
-            <div
-              className="md:flex items-center space-x-1 m-2 p-2 cursor-pointer"
-              key={index}
-            >
+            <div className="md:flex items-center space-x-1 m-2 p-2 cursor-pointer" key={index}>
               <ul>
                 <Link href={link.path}>
                   <li
@@ -49,11 +44,7 @@ export const AppBar: FC = () => {
           stroke="currentColor"
           className="w-6 h-6"
         >
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
         </svg>
       </div>
     </nav>
