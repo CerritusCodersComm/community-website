@@ -16,7 +16,7 @@ export const Hero: FC = () => {
         {/* <div className="border-l-4 border-indigo-500 h-screen"></div> */}
         {/* <h1 className="text-4xl font-bold text-center text-black">Cerritus Coders</h1> */}
         {/* <div className="flex flex-col justify-center"> */}
-        <div className="p-10 flex">
+        <div className="p-10 flex justify-between">
           <Image src={cerrituscollage} height={430} width={558} />
 
           <div className="ml-[200px]">
