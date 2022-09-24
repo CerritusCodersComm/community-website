@@ -6,17 +6,19 @@ module.exports = {
     extend: {
       fontFamily: {
         grotesk: ["Space Grotesk", "sans-serif"],
-        puritan: ["Puritan", "sans-serif"]
+        puritan: ["Puritan", "sans-serif"],
+        satoshi: ["satoshi variable", "sans-serif"]
       },
       colors: {
         lightPurple: "#CDB9F2",
         commColor: "#365B6D",
         hero: "#F1F6F0",
         line: "#6E61FF",
-        underLine: "#DAC4FF"
+        underLine: "#DAC4FF",
+        aboutSectionBg: "#F2F2F2"
       },
       borderRadius: {
-        smileUnderLine: "50%"
+        smileUnderLine: "100%"
       },
       borderWidth: {
         DEFAULT: "1px",
