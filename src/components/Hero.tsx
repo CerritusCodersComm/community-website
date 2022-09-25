@@ -24,9 +24,10 @@ export const Hero: FC = () => {
           </div>
         </div>
         {/* </div> */}
-        <div className="max-w-3xl mx-auto text-3xl tracking-wide leading-relaxed font-puritan text-center text-black justify-center mb-4">
-          This community is run solely by students, for students, to encourage development, open-source, and help the
-          community unlock their full potential, one step at a time.
+        <div className="max-w-3xl mx-auto text-3xl tracking-wide leading-relaxed font-satoshi text-center text-black justify-center mb-4">
+          This community is run solely by students, for students, to encourage
+          development, open-source, and help the community unlock their full
+          potential, one step at a time.
         </div>
       </div>
     </div>
