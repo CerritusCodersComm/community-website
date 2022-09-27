@@ -7,13 +7,13 @@ export const AboutSection: FC = () => {
     <div className="bg-white text-black p-4 pt-0">
       <div className="bg-aboutSectionBg h-3/4 pb-[100px] font-satoshi">
         <div className="pl-10 pt-4">
-          <div className="text-5xl tracking-widest">About Us</div>
+          <div className="text-5xl font-bold tracking-widest">About Us</div>
           <div className="w-[235px] h-8 border-underLine border-b-6 rounded-smileUnderLine"></div>
         </div>
         <div className="flex justify-between p-10">
           <div className="text-2xl tracking-wider font-normal pt-10">
             <div>
-              <span className="text-commColor">Cerritus Coders</span> is a
+              <span className="text-commColor font-bold">Cerritus Coders</span> is a
               student-run community focusing on open-source, project-based
               learning. It aims to help folks to get opportunities by
               encouraging them to learn, build and share in public.

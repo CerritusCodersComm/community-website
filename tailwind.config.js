@@ -7,7 +7,7 @@ module.exports = {
       fontFamily: {
         grotesk: ["Space Grotesk", "sans-serif"],
         puritan: ["Puritan", "sans-serif"],
-        satoshi: ["satoshi variable", "sans-serif"]
+        satoshi: ["Satoshi", "sans-serif"]
       },
       colors: {
         lightPurple: "#CDB9F2",
