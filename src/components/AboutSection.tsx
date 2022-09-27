@@ -8,7 +8,7 @@ export const AboutSection: FC = () => {
       <div className="bg-aboutSectionBg h-3/4 pb-[100px] font-satoshi">
         <div className="pl-10 pt-4">
           <div className="text-5xl font-bold tracking-widest">About Us</div>
-          <div className="w-[235px] h-8 border-underLine border-b-6 rounded-smileUnderLine"></div>
+          <div className="w-[235px] h-6 border-underLine border-b-6 rounded-smileUnderLine"></div>
         </div>
         <div className="flex justify-between p-10">
           <div className="text-2xl tracking-wider font-normal pt-10">

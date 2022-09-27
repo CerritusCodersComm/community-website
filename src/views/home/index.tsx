@@ -12,7 +12,6 @@ import {EventSection} from "../../components/events/EventSection";
 export const HomeView: FC = ({}) => {
     return (
         <>
-            <AppBar/>
             <HeroSection/>
             <AboutSection/>
             <EventSection />
