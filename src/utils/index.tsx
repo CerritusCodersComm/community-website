@@ -9,3 +9,7 @@ export const ellipsisText = (text: String, limit: number) => {
         return text.substring(0, limit) + "...";
     } else return text;
 }
+
+export const getWebURL = (text: String) => {
+    return text.toLowerCase().replace(/ /g, "-");
+}
