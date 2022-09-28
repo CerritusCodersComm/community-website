@@ -10,7 +10,7 @@ const Event: NextPage<{ eventProps: EventProps }> = (props) => {
         <div>
             <Head>
                 <title>{getWebTitle(props?.eventProps?.eventID)}</title>
-                <meta name='description' content='Grant details'/>
+                <meta name='description' content={props?.eventProps?.about}/>
             </Head>
             <EventView {...props.eventProps} />
         </div>

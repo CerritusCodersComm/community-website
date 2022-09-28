@@ -5,20 +5,19 @@ export const events: EventProps[] = [
         idx: 0,
         eventID: "hacking-the-hacktoberfest",
         title: "Hacking The HACKTOBERFEST",
-        about: "Hacking The HACKTOBERFEST is a month long event with various sessions to encourage HACKTOBERFEST in the community",
+        about: "Hacking The HACKTOBERFEST is a month-long event with various sessions to encourage HACKTOBERFEST in the community",
         description: `# Hacking The HACKTOBERFEST
-## _An event full of learn, code and collaborate to encourage students to participate in HACKTOBERFEST_
+## _An event full of learning, coding, and collaboration to encourage students to participate in HACKTOBERFEST_
 
-**Hacking The HACKTOBERFEST** is a month long event with various sessions to encourage HACKTOBERFEST in the community. It is going to be a month long journey commencing from 1st October to 31st October, 2022.
-The event is open for every individual who are interested in contributing to open-source. 
+**Hacking The HACKTOBERFEST** is a month-long event with various sessions to encourage HACKTOBERFEST in the community. It will be a month-long journey starting from 1st October to 31st October 2022. The event is open to every individual who is interested in contributing to open-source.
 
 ## What is HACKTOBERFEST?
-> HACKTOBERFEST is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open source projects. During this event, anyone can support open source by contributing changes and earn limited-edition swag(only first 40,000 contributors).
+> HACKTOBERFEST is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open-source projects. During this event, anyone can support open source by contributing changes and earn limited-edition swag(only the first 40,000 contributors).
 
 ## Offering
 
-- Students get the opportunity to learn, code and collaborate in the field of Open Source Development.
-- 10+ beginner friendly projects to contribute in the HACKTOBERFEST
+- Students get the opportunity to learn, code, and collaborate in the field of Open Source Development.
+- 10+ beginner-friendly projects to contribute to the HACKTOBERFEST
 - Mentorship from the community.
 - Top Contributors will be receiving swags apart from the HACKTOBERFEST swags.
 
@@ -31,7 +30,7 @@ i. **Community Swags**
 
 - Have 4 pull/merge requests accepted between October 1 and October 31 to complete HACKTOBERFEST
 
-- Top 5 contributors will complete HACKTOBERFEST with us will be receiving swags.  
+- Top 5 contributors who will complete HACKTOBERFEST with us and will be receiving swags.  
 
 ii. **HACKTOBERFEST Swags**
 - Register anytime between October 1 and October 31
@@ -52,12 +51,12 @@ ii. Register for Hacking The HACKTOBERFEST
 
 iii. Join the Discord Server by clicking [here](https://discord.com/invite/WYFskJZY8z).
 
-**Note: To receive community swags registration on both event is important.**
+**Note: To receive community swags registration for both events is important.**
 
 ## FAQ
 
 1. **Is participating in Hacking The HACKTOBERFEST free?**\n
-Yes! Every events organized by Cerritus Coders will always be free of cost!
+Yes! Every event organized by Cerritus Coders will always be free of cost!
 
 2. **Will I get paid for participating?**\n
 No! however, we have amazing swags and other rewards for our participants!
@@ -66,7 +65,7 @@ No! however, we have amazing swags and other rewards for our participants!
 The only main difference is that HACKTOBERFEST is a global event that Hacking The HACKTOBERFEST aims to promote in the local community to encourage folks to get started with open-source.
 
 ## Code of Conduct
-Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendees. You can read the code of conduct from [here](https://github.com/Hack-Club-SRM/Code-of-Conduct).
+Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendee. You can read the code of conduct from [here](https://github.com/Hack-Club-SRM/Code-of-Conduct).
 `,
         startingDate: "2022/10/01 ",
         endingDate: "2022/10/31",
