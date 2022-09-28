@@ -29,7 +29,7 @@ export const EventSection: FC = () => {
                                 <MdPeopleAlt/>
                                 <p><b>350+</b></p>
                             </div>
-                            <span>Members</span>
+                            <span>Participants</span>
                         </div>
                         <div className="grid grid-rows-2 gap-y-2 items-center">
                             <div className="flex space-x-2 items-center">
