@@ -17,6 +17,7 @@ export interface EventProps {
     venue: string;
     venueLink: string;
     registrationLink?: string;
+    scheduleArray?: Schedule[];
     status: EVENT_STATUS;
 }
 
@@ -24,6 +25,15 @@ interface SpeakerSocials {
     twitter?: string;
     linkedin?: string;
     github?: string;
+}
+interface Schedule {
+    title: string;
+    description: string;
+    date: Date;
+    timing: string;
+    thumbnailLink?: string;
+    venue: string;
+    venueLink: string;
 }
 
 
