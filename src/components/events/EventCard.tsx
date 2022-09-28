@@ -1,10 +1,12 @@
 import React from "react";
-import {ellipsisText, parseDate} from "../../utils";
+import {ellipsisText, getWebURL, parseDate} from "../../utils";
 import {SiGooglemaps} from "react-icons/si";
 import {FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
+import Link from "next/link";
 
 export interface EventProps {
     idx: number;
+    eventID: string;
     title: string;
     description: string;
     date: Date;
@@ -33,6 +35,7 @@ export enum EVENT_STATUS {
 
 
 export const EventCard = ({
+                              eventID,
                               title,
                               description,
                               date,
@@ -56,7 +59,9 @@ export const EventCard = ({
         <div className="card w-96 shadow-xl text-[#464343]">
             <figure className='relative'>
                 <div className='absolute flex w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
-                    <button className='m-auto btn btn-secondary'>Learn More</button>
+                    <Link href={`/events/${getWebURL(eventID)}`}>
+                        <button className='m-auto btn btn-secondary'>Learn More</button>
+                    </Link>
                 </div>
                 <div
                     className='absolute flex w-full h-10 items-center text-white text-[18px] bottom-0'>
@@ -111,7 +116,7 @@ export const EventCard = ({
                 </div>
                 <h2 className="card-title text-black">{title}</h2>
                 <p className="tracking-tight">{ellipsisText(description, 112)}</p>
-                <div className="relative p-10">
+                <div className="relative p-10 mb-2">
                     <div className="absolute left-0">
                         <button className="btn btn-primary hover:bg-commColor">{eventStatus()}</button>
                     </div>

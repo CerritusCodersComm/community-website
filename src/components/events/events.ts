@@ -3,6 +3,7 @@ import {EVENT_STATUS, EventProps} from "./EventCard";
 export const events: EventProps[] = [
     {
         idx: 0,
+        eventID: "opensource101",
         title: "Getting started with open source",
         description: "We will be talking about how beginner can start their open source journey and blah blah",
         date: new Date("2020/10/10"),
