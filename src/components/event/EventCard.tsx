@@ -1,54 +1,17 @@
 import React from "react";
-import {ellipsisText, getWebURL, parseDate} from "../../utils";
+import {ellipsisText, getWebURL, openWebLink, parseDate} from "../../utils";
 import {SiGooglemaps} from "react-icons/si";
-import {FaLinkedin, FaTwitter, FaGithub} from "react-icons/fa";
+import {FaLinkedin, FaTwitter, FaGithub, FaCalendarAlt} from "react-icons/fa";
 import Link from "next/link";
-
-export interface EventProps {
-    idx: number;
-    eventID: string;
-    title: string;
-    description: string;
-    date: Date;
-    timing: string;
-    speaker: string;
-    speakerSocials: SpeakerSocials;
-    imageLink: string;
-    venue: string;
-    venueLink: string;
-    registrationLink?: string;
-    scheduleArray?: Schedule[];
-    status: EVENT_STATUS;
-}
-
-interface SpeakerSocials {
-    twitter?: string;
-    linkedin?: string;
-    github?: string;
-}
-interface Schedule {
-    title: string;
-    description: string;
-    date: Date;
-    timing: string;
-    thumbnailLink?: string;
-    venue: string;
-    venueLink: string;
-}
-
-
-export enum EVENT_STATUS {
-    LIVE = "Join Now",
-    UPCOMING = "Set Reminder", // or show register button
-    PAST = "Watch recording",
-}
-
+import {EVENT_STATUS, EventProps} from "../../types/event_types";
 
 export const EventCard = ({
                               eventID,
                               title,
+                              about,
                               description,
-                              date,
+                              startingDate,
+                              endingDate,
                               timing,
                               speaker,
                               speakerSocials,
@@ -64,6 +27,9 @@ export const EventCard = ({
         else if (status === EVENT_STATUS.UPCOMING) return EVENT_STATUS.UPCOMING
         else return EVENT_STATUS.PAST
     }
+
+    const eventStartingDate = startingDate ? parseDate(new Date(startingDate)) : "TBD"
+    const eventEndingDate = endingDate ? parseDate(new Date(endingDate)) : null
 
     return (
         <div className="card w-96 shadow-xl text-[#464343]">
@@ -82,7 +48,7 @@ export const EventCard = ({
                         {
                             speakerSocials.github ? (
                                 <FaGithub className="text-white" onClick={
-                                    () => window.open(speakerSocials.github, "_blank")
+                                    () => openWebLink(speakerSocials.github)
                                 } style={{cursor: 'pointer'}}
                                 />
                             ) : null
@@ -90,7 +56,7 @@ export const EventCard = ({
                         {
                             speakerSocials.twitter ? (
                                 <FaTwitter className="text-white" onClick={
-                                    () => window.open(speakerSocials.twitter, "_blank")
+                                    () => openWebLink(speakerSocials.twitter)
                                 } style={{cursor: 'pointer'}}
                                 />
                             ) : null
@@ -98,7 +64,7 @@ export const EventCard = ({
                         {
                             speakerSocials.linkedin ? (
                                 <FaLinkedin className="text-white" onClick={
-                                    () => window.open(speakerSocials.linkedin, "_blank")
+                                    () => openWebLink(speakerSocials.linkedin)
                                 } style={{cursor: 'pointer'}}
                                 />
                             ) : null
@@ -121,19 +87,37 @@ export const EventCard = ({
 
                 </div>
                 <div className="grid grid-cols-2 mb-2">
-                    <h2>{parseDate(date)}</h2>
-                    <h2 className="text-right text-black">{timing}</h2>
-                </div>
-                <h2 className="card-title text-black">{title}</h2>
-                <p className="tracking-tight">{ellipsisText(description, 112)}</p>
-                <div className="relative p-10 mb-2">
-                    <div className="absolute left-0">
-                        <button className="btn btn-primary hover:bg-commColor">{eventStatus()}</button>
+                    <div className="flex space-x-2 items-center">
+                        <FaCalendarAlt/>
+                        {
+                            eventEndingDate ? (
+                                <h2>
+                                    {eventStartingDate} - {eventEndingDate}
+                                </h2>
+                            ) : (
+                                <h2>{eventStartingDate}</h2>
+                            )
+                        }
                     </div>
+                    {
+                        timing ?
+                            <h2 className="text-right text-black">{timing}</h2> : null
+                    }
+                </div>
+
+                <h2 className="card-title text-black">{title}</h2>
+                <p className="tracking-tight">{ellipsisText(about, 112)}</p>
+                <div className="relative p-10 mb-2">
+                    {/*<div className="absolute left-0">*/}
+                    {/*    <button className="btn btn-primary hover:bg-commColor">{eventStatus()}</button>*/}
+                    {/*</div>*/}
                     {
                         registrationLink ? (
                             <div className="absolute right-0">
-                                <button className="btn btn-primary hover:bg-commColor">Register</button>
+                                <button className="btn btn-primary hover:bg-commColor"
+                                onClick={
+                                    () => openWebLink(registrationLink)
+                                }>Register</button>
                             </div>) : null
                     }
                 </div>
