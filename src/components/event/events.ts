@@ -77,7 +77,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             github: "https://github.com/cerrituscoderscomm",
             linkedin: "https://linkedin.com/company/cerrituscoders",
         },
-        imageLink: "https://www.shutterstock.com/image-photo/wood-alphabet-letter-word-tbd-600w-1823980877.jpg",
+        imageLink: "https://drive.google.com/uc?export=view&id=1ZHNd0F4-qEa2GATMyFXw4j_1I9fx6inf",
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfrk3X-CVHakn69h54sHbGiSmab8RKdCrit9dDSxVj6N6VbrA/viewform",
