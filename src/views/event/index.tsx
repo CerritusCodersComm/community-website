@@ -97,7 +97,10 @@ export const EventView: FC<EventProps> = (props) => {
                                 {
                                     props.registrationLink ? (
                                         <div className="mt-5">
-                                            <button className="btn btn-primary bg-commColor">Register</button>
+                                            <button className="btn btn-primary bg-commColor" 
+                                                onClick={() => openWebLink(props.registrationLink)}>
+                                                Register
+                                            </button>
                                         </div>) : null
                                 }
                             </div>
