@@ -65,7 +65,7 @@ No! however, we have amazing swags and other rewards for our participants!
 The only main difference is that HACKTOBERFEST is a global event that Hacking The HACKTOBERFEST aims to promote in the local community to encourage folks to get started with open-source.
 
 ## Code of Conduct
-Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendee. You can read the code of conduct from [here](https://github.com/Hack-Club-SRM/Code-of-Conduct).
+Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendee. You can read the code of conduct from [here](https://github.com/CerritusCodersComm/CerritusCodersComm/blob/main/CodeOfConduct.md).
 `,
         startingDate: "2022/10/01 ",
         endingDate: "2022/10/31",
