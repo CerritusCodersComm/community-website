@@ -128,7 +128,7 @@ export const EventView: FC<EventProps> = (props) => {
                     <div>
                         <div>
                             <a className="text-lg font-bold text-black mt-2"
-                               href="https://www.youtube.com/channel/UCwdeEkNRifkL0tZrTPx85Ug">
+                               href="https://www.youtube.com/watch?v=hNISiClTFyU">
                                 Hacking The HACKTOBERFEST: Opening Ceremony
                             </a>
                             <h3 className="text-md font-bold text-[#3C73C7] mb-2">YouTube Live Stream: 8pm</h3>
