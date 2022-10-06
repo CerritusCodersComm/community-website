@@ -145,7 +145,7 @@ export const EventView: FC<EventProps> = (props) => {
                     <div>
                         <div>
                             <a className="text-lg font-bold mt-2"
-                               href="https://twitter.com/cerrituscoders">
+                               href="https://twitter.com/i/spaces/1mnxeRqldPaKX">
                                 How to become a better open source contributor through HACKTOBERFEST
                             </a>
                             <h3 className="text-md font-bold text-[#3C73C7] mb-2">Twitter Space Live: 8pm</h3>
