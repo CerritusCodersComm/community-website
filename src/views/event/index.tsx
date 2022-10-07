@@ -6,6 +6,8 @@ import {subevents} from "../../components/event/events";
 import {openWebLink, parseDateWithYear} from "../../utils";
 import {EventProps} from "../../types/event_types";
 import ReactMarkdown from "react-markdown";
+import {projects} from "../../components/event/projects";
+import {ProjectCard} from "../../components/ProjectCard";
 
 
 export const EventView: FC<EventProps> = (props) => {
@@ -97,8 +99,8 @@ export const EventView: FC<EventProps> = (props) => {
                                 {
                                     props.registrationLink ? (
                                         <div className="mt-5">
-                                            <button className="btn btn-primary bg-commColor" 
-                                                onClick={() => openWebLink(props.registrationLink)}>
+                                            <button className="btn btn-primary bg-commColor"
+                                                    onClick={() => openWebLink(props.registrationLink)}>
                                                 Register
                                             </button>
                                         </div>) : null
@@ -143,7 +145,7 @@ export const EventView: FC<EventProps> = (props) => {
                     <div>
                         <div>
                             <a className="text-lg font-bold mt-2"
-                               href="https://twitter.com/cerrituscoders">
+                               href="https://twitter.com/i/spaces/1mnxeRqldPaKX">
                                 How to become a better open source contributor through HACKTOBERFEST
                             </a>
                             <h3 className="text-md font-bold text-[#3C73C7] mb-2">Twitter Space Live: 8pm</h3>
@@ -154,6 +156,20 @@ export const EventView: FC<EventProps> = (props) => {
                         </div>
                     </div>
                 </Chrono>
+            </div>
+
+            <div className="p-12">
+                <h1 className="underline underline-offset-8 font-bold text-4xl text-center">Projects</h1>
+
+                <div
+                    className="tracking-wide leading-relaxed text-center px-20 py-10">
+                    <div className='flex flex-wrap justify-center gap-20'>
+                        {projects.map((props, idx) => (
+                            <ProjectCard {...props} key={idx} idx={props.idx}/>
+                        ))}
+                    </div>
+                </div>
+
             </div>
         </div>
     );

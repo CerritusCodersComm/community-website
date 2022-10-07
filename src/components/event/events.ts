@@ -85,36 +85,45 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
     },
 ]
 export const subevents: SubEventProps[] = [
-    {
-        idx: 0,
-        id: "hacktoberfest_sub_1",
-        title: "1st October, 2022",
-        // cardTitle: "Hacking The HACKTOBERFEST: Opening Ceremony",
-        // url: "https://www.youtube.com/channel/UCwdeEkNRifkL0tZrTPx85Ug",
-        // cardSubtitle: "YouTube Live Stream: 8pm",
-        // cardDetailedText: `In this live stream, we will be talking about the event, its overview, schedule and different
-        //  projects that contributors can contribute to.It will be a great opportunity for the participants to get to know`
-    }, {
-        idx: 1,
-        id: "hacktoberfest_sub_2",
-        title: "8th October, 2022",
-        // cardTitle: "How to become a better open source contributor through HACKTOBERFEST",
-        // cardSubtitle: "Twitter Space Live: 8pm",
-        // url: "https://twitter.com/cerrituscoders",
-        // cardDetailedText: "This twitter space will help you get detailed understanding of open source contributions and how you can become better contributor through HACKTOBERFEST."
-    }, {
-        idx: 2,
-        id: "hacktoberfest_sub_3",
-        title: "17th October, 2022",
-        cardTitle: "To Be Decided",
-        url: "",
-        cardDetailedText: `Soon will be updated`
-    }, {
-        idx: 3,
-        id: "hacktoberfest_sub_3",
-        title: "31st October, 2022",
-        cardTitle: "Hacking The HACKTOBERFEST: Closing Ceremony",
-        url: "https://www.youtube.com/channel/UCwdeEkNRifkL0tZrTPx85Ug",
-        cardDetailedText: `TBD`
+  {
+    idx: 0,
+    id: "hacktoberfest_sub_1",
+    title: "1st October, 2022",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: "https://drive.google.com/uc?export=view&id=1ZHNd0F4-qEa2GATMyFXw4j_1I9fx6inf",
+      },
     },
-]
+    // cardTitle: "Hacking The HACKTOBERFEST: Opening Ceremony",
+    // url: "https://www.youtube.com/channel/UCwdeEkNRifkL0tZrTPx85Ug",
+    // cardSubtitle: "YouTube Live Stream: 8pm",
+    // cardDetailedText: `In this live stream, we will be talking about the event, its overview, schedule and different
+    //  projects that contributors can contribute to.It will be a great opportunity for the participants to get to know`
+  },
+  {
+    idx: 1,
+    id: "hacktoberfest_sub_2",
+    title: "8th October, 2022",
+    // cardTitle: "How to become a better open source contributor through HACKTOBERFEST",
+    // cardSubtitle: "Twitter Space Live: 8pm",
+    // url: "https://twitter.com/cerrituscoders",
+    // cardDetailedText: "This twitter space will help you get detailed understanding of open source contributions and how you can become better contributor through HACKTOBERFEST."
+  },
+  {
+    idx: 2,
+    id: "hacktoberfest_sub_3",
+    title: "17th October, 2022",
+    cardTitle: "To Be Decided",
+    url: "",
+    cardDetailedText: `Soon will be updated`,
+  },
+  {
+    idx: 3,
+    id: "hacktoberfest_sub_3",
+    title: "31st October, 2022",
+    cardTitle: "Hacking The HACKTOBERFEST: Closing Ceremony",
+    url: "https://www.youtube.com/channel/UCwdeEkNRifkL0tZrTPx85Ug",
+    cardDetailedText: `TBD`,
+  },
+];
