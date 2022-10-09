@@ -105,6 +105,12 @@ export const subevents: SubEventProps[] = [
     idx: 1,
     id: "hacktoberfest_sub_2",
     title: "8th October, 2022",
+    media: {
+      type: "IMAGE",
+      source: {
+        url: "https://drive.google.com/uc?export=view&id=1kq_J-KoqzM0lbhbehx90XYPrue9dsVDF",
+      },
+    },
     // cardTitle: "How to become a better open source contributor through HACKTOBERFEST",
     // cardSubtitle: "Twitter Space Live: 8pm",
     // url: "https://twitter.com/cerrituscoders",
