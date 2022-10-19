@@ -1,16 +1,13 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { BasicsView } from "../views";
+import { BasicsView } from "../views/basics";
 
-const Basics: NextPage = (props) => {
+const Basics: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Solana Scaffold</title>
-        <meta
-          name="description"
-          content="Basic Functionality"
-        />
+        <meta name="description" content="Basic Functionality" />
       </Head>
       <BasicsView />
     </div>
