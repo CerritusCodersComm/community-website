@@ -31,7 +31,7 @@ i. **Community Swags**
 
 - Have 4 pull/merge requests accepted between October 1 and October 31 to complete HACKTOBERFEST
 
-- Top 5 contributors will complete HACKTOBERFEST with us will be receiving swags.  
+- Top contributors who contributed to our projects will be receiving swags.
 
 ii. **HACKTOBERFEST Swags**
 - Register anytime between October 1 and October 31
