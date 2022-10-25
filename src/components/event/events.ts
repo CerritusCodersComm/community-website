@@ -117,14 +117,6 @@ export const subevents: SubEventProps[] = [
     // cardDetailedText: "This twitter space will help you get detailed understanding of open source contributions and how you can become better contributor through HACKTOBERFEST."
   },
   {
-    idx: 2,
-    id: "hacktoberfest_sub_3",
-    title: "17th October, 2022",
-    cardTitle: "To Be Decided",
-    url: "",
-    cardDetailedText: `Soon will be updated`,
-  },
-  {
     idx: 3,
     id: "hacktoberfest_sub_3",
     title: "31st October, 2022",

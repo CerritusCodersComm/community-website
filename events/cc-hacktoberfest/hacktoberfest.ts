@@ -31,7 +31,7 @@ i. **Community Swags**
 
 - Have 4 pull/merge requests accepted between October 1 and October 31 to complete HACKTOBERFEST
 
-- Top 5 contributors will complete HACKTOBERFEST with us will be receiving swags.  
+- Top contributors who contributed to our projects will be receiving swags.
 
 ii. **HACKTOBERFEST Swags**
 - Register anytime between October 1 and October 31
@@ -40,7 +40,7 @@ ii. **HACKTOBERFEST Swags**
 
 - Project maintainers must accept your pull/merge requests for them to count toward your total
 
-- Have 4 pull/merge requests accepted between October 1 and October 31 to complete HACKTOBERFEST
+- Have 2 pull/merge requests accepted between October 1 and October 31 to complete HACKTOBERFEST
 
 - The first 40,000 participants (maintainers and contributors) who complete HACKTOBERFEST can elect to receive one of two prizes: a tree planted in their name, or the HACKTOBERFEST 2022 t-shirt.
 ## How to participate?
