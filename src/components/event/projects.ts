@@ -131,5 +131,37 @@ export const projects: ProjectProps[] = [
         }],
         category: ["Android"],
         author: "bhawna1203",
+    },
+    {
+        idx: 8,
+        link: "https://github.com/TejasNair9977/rpgadv",
+        name: "Python RPG Adventure",
+        description:
+            "This is a role playing adventure game, where you are an adventurer who has to best the demon king in his throne room. You have to level up, upgrade your weapons, sell resources and keep fighting monsters until you reach the demon king, and try your best to defeat him, with magic or brawn.",
+        techStack: [{
+            idx: 0,
+            name: "Python"
+        }],
+        category: ["Game"],
+        author: "Tejas Nair",
+    },
+    {
+        idx: 9,
+        link: "https://github.com/Rahilsiddique/resume-builder",
+        name: "Resume Builder ",
+        description:
+            "An app developed for creating a resume in few steps. This app currently has only one format, but we have much bigger plans for it in the future.",
+        techStack: [{
+            idx: 0,
+            name: "HTML"
+        },{
+            idx: 1,
+            name: "CSS"
+        },{
+            idx: 2,
+            name: "React.js"
+        }],
+        category: ["Web"],
+        author: "Rahil Siddique",
     }
 ];
