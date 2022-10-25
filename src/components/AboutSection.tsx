@@ -13,8 +13,8 @@ export const AboutSection: FC = () => {
         <div className="flex justify-between p-10">
           <div className="text-2xl tracking-wider font-normal pt-10">
             <div>
-              <span className="text-commColor font-bold">Cerritus Coders</span> is a
-              student-run community focusing on open-source, project-based
+              <span className="text-commColor font-bold">Cerritus Coders</span>{" "}
+              is a student-run community focusing on open-source, project-based
               learning. It aims to help folks to get opportunities by
               encouraging them to learn, build and share in public.
             </div>
