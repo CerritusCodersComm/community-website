@@ -9,19 +9,19 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <div className="flex flex-col h-screen">
-        <div className="hidden md:block relative mb-20">
+        <div className="hidden lg:block relative mb-20">
           <div className="absolute left-0 top-0 background-graphic-upper"></div>
           <div className="absolute left-0 right-0 z-20">
             <AppBar />
           </div>
         </div>
-        <div className="hidden md:block z-10 mt-10">
+        <div className="hidden lg:block z-10 mt-10">
           {/* @ts-ignore */}
           <Component {...pageProps} />
           {/*<Footer/>*/}
         </div>
 
-        <div className="block md:hidden">
+        <div className="block lg:hidden">
           <TempMobileView/>
         </div>
       </div>
