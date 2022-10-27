@@ -2,15 +2,15 @@ export const navLinks = [
   { name: "Home", path: "/" },
   {
     name: "Events",
-    path: "/events"
+    path: "/Errorpage"
   },
   {
     name: "Programs",
-    path: "/programs"
+    path: "/Errorpage"
   },
   {
     name: "Testimonials",
-    path: "/testimonials"
+    path: "/Errorpage"
   },
   {
     name: "Team",
