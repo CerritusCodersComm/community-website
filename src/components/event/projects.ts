@@ -118,22 +118,6 @@ export const projects: ProjectProps[] = [
     },
     {
         idx: 7,
-        link: "https://github.com/Bhawna1203/Muskan--The-joy-of-giving-by-nature",
-        name: "Muskan - The joy of giving by nature",
-        description:
-            "Muskan App is a fully functional Android app built with Kotlin, Java and XML. (Muskan- The joy of giving by nature) i.e, App that helps marriage/party halls and individuals to connect to the nearest places where this food could feed those in need and food wastage is minimised.",
-        techStack: [{
-            idx: 0,
-            name: "Kotlin"
-        }, {
-            idx: 1,
-            name: "Java"
-        }],
-        category: ["Android"],
-        author: "bhawna1203",
-    },
-    {
-        idx: 8,
         link: "https://github.com/TejasNair9977/rpgadv",
         name: "Python RPG Adventure",
         description:
@@ -146,7 +130,7 @@ export const projects: ProjectProps[] = [
         author: "Tejas Nair",
     },
     {
-        idx: 9,
+        idx: 8,
         link: "https://github.com/Rahilsiddique/resume-builder",
         name: "Resume Builder ",
         description:
