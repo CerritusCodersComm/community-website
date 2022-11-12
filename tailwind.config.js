@@ -7,7 +7,13 @@ module.exports = {
       fontFamily: {
         grotesk: ["Space Grotesk", "sans-serif"],
         puritan: ["Puritan", "sans-serif"],
-        satoshi: ["Satoshi", "sans-serif"]
+        satoshi: ["Satoshi", "sans-serif"],
+      },
+      screens: {
+        md: "800px",
+        // => @media (min-width: 640px) { ... }
+
+        // => @media (min-width: 1024px) { ... }
       },
       colors: {
         lightPurple: "#CDB9F2",
@@ -15,10 +21,10 @@ module.exports = {
         hero: "#F1F6F0",
         line: "#6E61FF",
         underLine: "#DAC4FF",
-        aboutSectionBg: "#F2F2F2"
+        aboutSectionBg: "#F2F2F2",
       },
       borderRadius: {
-        smileUnderLine: "100%"
+        smileUnderLine: "100%",
       },
       borderWidth: {
         DEFAULT: "1px",
@@ -27,9 +33,9 @@ module.exports = {
         3: "3px",
         4: "4px",
         6: "6px",
-        8: "8px"
-      }
-    }
+        8: "8px",
+      },
+    },
   },
   plugins: [require("daisyui"), require("@tailwindcss/typography")],
   daisyui: {
@@ -41,41 +47,35 @@ module.exports = {
           /* your theme name */
           fontFamily: {
             display: ["PT Mono, monospace"],
-            body: ["Inter, sans-serif"]
+            body: ["Inter, sans-serif"],
           },
           primary: "#2a2a2a" /* Primary color */,
           "primary-focus": "#9945FF" /* Primary color - focused */,
-          "primary-content":
-            "#ffffff" /* Foreground content color to use on primary color */,
+          "primary-content": "#ffffff" /* Foreground content color to use on primary color */,
 
           secondary: "#f6d860" /* Secondary color */,
           "secondary-focus": "#f3cc30" /* Secondary color - focused */,
-          "secondary-content":
-            "#ffffff" /* Foreground content color to use on secondary color */,
+          "secondary-content": "#ffffff" /* Foreground content color to use on secondary color */,
 
           accent: "#33a382" /* Accent color */,
           "accent-focus": "#2aa79b" /* Accent color - focused */,
-          "accent-content":
-            "#ffffff" /* Foreground content color to use on accent color */,
+          "accent-content": "#ffffff" /* Foreground content color to use on accent color */,
 
           neutral: "#2b2b2b" /* Neutral color */,
           "neutral-focus": "#2a2e37" /* Neutral color - focused */,
-          "neutral-content":
-            "#ffffff" /* Foreground content color to use on neutral color */,
+          "neutral-content": "#ffffff" /* Foreground content color to use on neutral color */,
 
-          "base-100":
-            "#181818" /* Base color of page, used for blank backgrounds */,
+          "base-100": "#181818" /* Base color of page, used for blank backgrounds */,
           "base-200": "#35363a" /* Base color, a little darker */,
           "base-300": "#222222" /* Base color, even more darker */,
-          "base-content":
-            "#f9fafb" /* Foreground content color to use on base color */,
+          "base-content": "#f9fafb" /* Foreground content color to use on base color */,
 
           info: "#2094f3" /* Info */,
           success: "#009485" /* Success */,
           warning: "#ff9900" /* Warning */,
-          error: "#ff5724" /* Error */
-        }
-      }
+          error: "#ff5724" /* Error */,
+        },
+      },
       // backup themes:
       // 'dark',
       // 'synthwave'
@@ -83,6 +83,6 @@ module.exports = {
     base: true,
     utils: true,
     logs: true,
-    rtl: false
-  }
+    rtl: false,
+  },
 };

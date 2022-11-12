@@ -17,15 +17,10 @@ export const AppBar: FC = () => {
       <div className="mt-2 ml-10">
         <Image src={cerritusCodersLogo} height={107} width={214} />
       </div>
-      <div
-        className={`hidden xl:flex mr-3 xl:tems-center transition-all duration-500 ease-in`}
-      >
+      <div className={`hidden xl:flex mr-3 xl:tems-center transition-all duration-500 ease-in`}>
         {navLinks.map((link, index) => {
           return (
-            <div
-              className="xl:flex items-center space-x-1 m-2 p-2 cursor-pointer"
-              key={index}
-            >
+            <div className="xl:flex items-center space-x-1 m-2 p-2 cursor-pointer" key={index}>
               <ul>
                 <Link href={link.path}>
                   <li
@@ -41,21 +36,14 @@ export const AppBar: FC = () => {
         })}
         <div className="flex items-center">
           <button className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8">
-            Join Our Community
+            <Link href="/"> Join Our Community</Link>
           </button>
         </div>
       </div>
 
       {/* navbar for small devices */}
-      <div
-        onClick={() => setNav((prev) => !prev)}
-        className={`block pt-10 pr-6 ${nav && "xl:hidden"} z-10`}
-      >
-        {!nav ? (
-          <FaTimes color="commColor" size={40} />
-        ) : (
-          <FaBars color="commColor" size={40} />
-        )}
+      <div onClick={() => setNav((prev) => !prev)} className={`block pt-10 pr-6 ${nav && "xl:hidden"} z-10`}>
+        {!nav ? <FaTimes color="commColor" size={40} /> : <FaBars color="commColor" size={40} />}
       </div>
       <div
         className={

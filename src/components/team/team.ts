@@ -41,24 +41,15 @@ export const team: TeamProps[] = [
     name: "Sanskar khandelwal ",
     imagePath: require("../../assets/team/sanskar.png"),
   },
+
   {
     idx: 8,
-    name: "Bhawna Chauhan",
-    imagePath: require("../../assets/team/bhawna.jpg"),
-  },
-  {
-    idx: 9,
     name: "Sahil Yadav",
     imagePath: require("../../assets/team/sahil.jpeg"),
   },
   {
-    idx: 10,
+    idx: 9,
     name: "Sagar Gupta",
     imagePath: require("../../assets/team/sagar.jpg"),
-  },
-  {
-    idx: 11,
-    name: "Hrishabh Jain",
-    imagePath: require("../../assets/team/hrishabh.jpeg"),
   },
 ];
