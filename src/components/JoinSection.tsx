@@ -10,7 +10,7 @@ export const JoinSection: FC = () => {
           Join Our Community
         </div>
         <div className="mx-auto text-[20px] tracking-wide leading-relaxed font-satoshi text-center text-[#7D7D7D] justify-center mb-4">
-          Join the community run solely by students, for students, focused on development, open source and much more.
+          Join the community run solely by students, for students, focused on development, open source, and much more.
           <div className="justify-center w-auto h-auto flex flex-col md:flex-row items-center mt-8">
             <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
