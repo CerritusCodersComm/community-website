@@ -20,7 +20,7 @@ const Event: NextPage<{ eventProps: EventProps }> = (props) => {
 export async function getStaticProps() {
     return {
         props: {
-            eventProps: JSON.parse(JSON.stringify(events[0]))
+            eventProps: JSON.parse(JSON.stringify(events[1]))
         }
     }
 }
