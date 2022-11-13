@@ -1,30 +1,78 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Puritan&display=swap");
 @import url("https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --primary-color: #365B6D;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans,
     Helvetica Neue, sans-serif;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
-/* example: override wallet button style */
-.wallet-adapter-button:not([disabled]):hover {
-  background-color: #707070;
+.subevent {
+    border-left: 3px solid var(--primary-color);
+    padding: 0 30px;
+    margin-left: 185px;
 }
 
+@media (max-width: 767px) {
+    .subevent {
+        margin-left: 0;
+        padding-right: 0;
+    }
+}
 
+.subevent .item {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+.subevent .event-name {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.subevent .venue {
+    position: absolute;
+    right: 0;
+    top: 2px;
+}
+
+.subevent .venue .fa {
+    margin-right: 8px;
+}
+
+.subevent .date {
+    position: absolute;
+    left: -185px;
+    top: 0;
+}
+
+@media (max-width: 767px) {
+    .subevent .date {
+        position: static;
+        margin-bottom: 1rem;
+    }
+
+    .subevent {
+        border: none;
+    }
+}
