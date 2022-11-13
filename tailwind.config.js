@@ -10,10 +10,9 @@ module.exports = {
         satoshi: ["Satoshi", "sans-serif"],
       },
       screens: {
-        md: "800px",
-        // => @media (min-width: 640px) { ... }
-
-        // => @media (min-width: 1024px) { ... }
+        md: "1000px",
+        sm: "580px",
+        xsm: "340px",
       },
       colors: {
         lightPurple: "#CDB9F2",

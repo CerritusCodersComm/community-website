@@ -10,11 +10,11 @@ export const AppBar: FC = () => {
   console.log(nav);
   return (
     <nav
-      className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md ${
+      className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md h-full py-10 md:py-0 md:px-0 sm:py-8 ${
         !nav && "fixed w-[100%]"
       }`}
     >
-      <div className="mt-2 ml-10">
+      <div className="mt-2 ml-10 md:block hidden">
         <Image src={cerritusCodersLogo} height={107} width={214} />
       </div>
       <div className={`hidden xl:flex mr-3 xl:tems-center transition-all duration-500 ease-in`}>
@@ -41,8 +41,11 @@ export const AppBar: FC = () => {
         </div>
       </div>
 
-      {/* navbar for small devices */}
-      <div onClick={() => setNav((prev) => !prev)} className={`block pt-10 pr-6 ${nav && "xl:hidden"} z-10`}>
+      {/* navbar for xsmall devices */}
+      <div
+        onClick={() => setNav((prev) => !prev)}
+        className={`block md:pt-10 md:pr-6 sm:px-10 sm:py-2 md:py-4 md:px-0 md:mb-10 mx-5 ${nav && "xl:hidden"} z-10`}
+      >
         {!nav ? <FaTimes color="commColor" size={40} /> : <FaBars color="commColor" size={40} />}
       </div>
       <div
