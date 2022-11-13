@@ -92,7 +92,7 @@ export const EventView: FC<EventProps> = (props) => {
             </section>
 
             {/* Event Details */}
-            <section className="relative">
+            <section className="relative" id="details">
 
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
 
