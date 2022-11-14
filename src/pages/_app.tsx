@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import { FC } from "react";
 import { AppBar } from "../components/AppBar";
-import {JoinSection} from "../components/JoinSection";
+import {JoinSection} from "../components/join-section/JoinSection";
 
 require("../styles/globals.css");
 
@@ -15,7 +15,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
             <AppBar />
           </div>
         </div>
-        <div className="block z-10 md:mt-[40px]">
+        <div className="block z-10 bg-white md:mt-[40px]">
           {/* @ts-ignore */}
           <Component {...pageProps} />
           <JoinSection/>
