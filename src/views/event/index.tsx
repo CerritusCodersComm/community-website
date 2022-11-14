@@ -91,7 +91,7 @@ export const EventView: FC<EventProps> = (props) => {
                 </div>
             </section>
 
-            {/* Event Details */}
+            {/* EventID Details */}
             <section className="relative" id="details">
 
                 <div className="max-w-6xl mx-auto px-4 sm:px-6">
@@ -197,7 +197,7 @@ export const EventView: FC<EventProps> = (props) => {
                 </div>
             </section>
 
-            {/* Event OverView */
+            {/* EventID OverView */
             }
             <section className="relative">
 
@@ -224,51 +224,59 @@ export const EventView: FC<EventProps> = (props) => {
             </section>
 
             {/* Sub Events  */}
-            <section className="relative text-black" id="schedule">
+            {
+                props.subEvents ? (
+                    <section className="relative text-black" id="schedule">
 
-                <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                    <div className="pb-12 md:pb-10">
+                        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                            <div className="pb-12 md:pb-10">
 
-                        {/* Section header */}
-                        <div className="text-center pb-2 md:pb-4" id="overview">
-                            <h1 className="text-[40px] md:text-5xl font-satoshi  text-black font-extrabold leading-tighter  mb-4"
-                                data-aos="zoom-y-out">
-                                Event Schedule
-                            </h1>
+                                {/* Section header */}
+                                <div className="text-center pb-2 md:pb-4" id="overview">
+                                    <h1 className="text-[40px] md:text-5xl font-satoshi  text-black font-extrabold leading-tighter  mb-4"
+                                        data-aos="zoom-y-out">
+                                        Event Schedule
+                                    </h1>
+                                </div>
+                                {
+                                    props.subEvents.map((subevent, index) => (
+                                        <SubEvents {...subevent} key={index} idx={props.idx}/>
+                                    ))
+                                }
+                            </div>
                         </div>
-                        {
-                            props.subEvents.map((subevent, index) => (
-                                <SubEvents {...subevent} key={index} idx={props.idx}/>
-                            ))
-                        }
-                    </div>
-                </div>
-            </section>
+                    </section>
+                ) : null
+            }
 
 
-            {/* Event Media  */}
-            <section className="relative text-black" id="schedule">
+            {/* EventID Media  */}
+            {
+                props.media ? (
+                    <section className="relative text-black" id="schedule">
 
-                <div className="max-w-6xl mx-auto px-4 sm:px-6">
-                    <div className="pb-12 md:pb-10">
+                        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                            <div className="pb-12 md:pb-10">
 
-                        {/* Section header */}
-                        <div className="text-center pb-2 md:pb-4" id="overview">
-                            <h1 className="text-[40px] md:text-5xl font-satoshi  text-black font-extrabold leading-tighter  mb-4"
-                                data-aos="zoom-y-out">
-                                Event Media
-                            </h1>
+                                {/* Section header */}
+                                <div className="text-center pb-2 md:pb-4" id="overview">
+                                    <h1 className="text-[40px] md:text-5xl font-satoshi  text-black font-extrabold leading-tighter  mb-4"
+                                        data-aos="zoom-y-out">
+                                        Event Media
+                                    </h1>
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 ">
+                                    {
+                                        props.media?.map((media, index) => (
+                                            <Image className="rounded-md" src={media} key={index}/>
+                                        ))
+                                    }
+                                </div>
+                            </div>
                         </div>
-                        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 ">
-                            {
-                                props.media?.map((media, index) => (
-                                    <Image className="rounded-md" src={media} key={index}/>
-                                ))
-                            }
-                        </div>
-                    </div>
-                </div>
-            </section>
+                    </section>
+                ) : null
+            }
         </div>
 
     );
