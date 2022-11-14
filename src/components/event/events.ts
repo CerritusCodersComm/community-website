@@ -137,7 +137,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         description: `
 ## _A bootcamp to help students kick start their journey with tech stacks like Android, Web development, etc._
 
-**Summer Bootcamp '22** is a 4 week long bootcamp with various sessions to encourage HACKTOBERFEST in the community. It starts from June 4th and ends on June 26th.
+**Summer Bootcamp '22** is a 4 week long bootcamp with various sessions to encourage development in the community. It starts from June 4th and ends on June 26th.
 The event is open for every individual who is a beginner and wishes to learn about that specific tech stack. 
 
 ## What will happen in the BootCamp?
