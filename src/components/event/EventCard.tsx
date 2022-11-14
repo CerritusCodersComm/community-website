@@ -33,7 +33,7 @@ export const EventCard = ({
     const eventEndingDate = endingDate ? parseDate(new Date(endingDate)) : null
 
     return (
-        <div className="card w-96 shadow-xl text-[#464343]">
+        <div className="card w-96 shadow-xl bg-white text-[#464343]">
             <figure className='relative'>
                 <div className='absolute flex w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
                     <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
@@ -112,7 +112,7 @@ export const EventCard = ({
                     {/*</div>*/}
                     {
                         registrationLink ? (
-                            <div className="absolute right-0">
+                            <div className="absolute bottom-0 right-0">
                                 <button className="btn btn-primary hover:bg-primary"
                                         onClick={
                                             () => openWebLink(registrationLink)

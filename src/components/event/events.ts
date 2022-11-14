@@ -132,7 +132,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         idx: 1,
         eventID: "summer-bootcamp-22",
         title: "Summer Bootcamp '22",
-        about: "This bootcamp is for beginners to get familiar with different tech stacks.",
+        about: "Summer bootcamp is a month-long event for beginners to get familiar and get an exposure to different tech stacks.",
         description: `
 ## _A bootcamp to help students kick start their journey with tech stacks like Android, Web development, etc._
 
