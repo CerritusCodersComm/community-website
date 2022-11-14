@@ -91,6 +91,32 @@ export const EventView: FC<EventProps> = (props) => {
                 </div>
             </section>
 
+            {/* EventID Media  */}
+            {
+                props.summary ? (
+                    <section className="relative text-black" id="schedule">
+
+                        <div className="max-w-6xl mx-auto px-4 sm:px-6">
+                            <div className="pb-12 md:pb-10">
+                                {/* Section header */}
+                                <div className="text-center pb-2 md:pb-4" id="summary">
+                                    <h1 className="text-[40px] md:text-5xl font-satoshi  text-black font-extrabold leading-tighter  mb-4"
+                                        data-aos="zoom-y-out">
+                                        Event Summary
+                                    </h1>
+                                </div>
+                                <div className="max-w-3xl mx-auto">
+                                    <article className='font-satoshi text-black mx-auto md:text-xl prose'>
+                                        <ReactMarkdown children={'> Note: This event has finished.'}/>
+                                        {props.summary}
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                ) : null
+            }
+
             {/* EventID Details */}
             <section className="relative" id="details">
 

@@ -126,7 +126,8 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             require("../../assets/images/events/hth/media/1.png"),
             require("../../assets/images/events/hth/media/2.png"),
             require("../../assets/images/events/hth/media/3.png"),
-        ]
+        ],
+        summary:"Hacking the HACKTOBERFEST an event, meant to be an extension for Hacktoberfest, where we helped beginners get into open source, with a curated set of repositories to contribute to. In the 10+ repos we had, we got a total of 25+ valid PRs in this event and started the open source journey for dozens of beginners. We sent swags to the most prominent contributors for our event to give back to them for their contribution. We got a lot of positive feedback from the students who took part in this event and they stated that they learnt a lot of things by participating in our event."
     },
     {
         idx: 1,
@@ -178,7 +179,15 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",
-        status: EVENT_STATUS.PAST
+        status: EVENT_STATUS.PAST,
+        media: [
+            require("../../assets/images/events/summer-bootcamp22/media/1.png"),
+            require("../../assets/images/events/summer-bootcamp22/media/2.png"),
+            require("../../assets/images/events/summer-bootcamp22/media/3.png"),
+            require("../../assets/images/events/summer-bootcamp22/media/4.png"),
+        ],
+        summary:"The summer bootcamp was a 4 week long bootcamp with various sessions to encourage development in the community. It starts from June 4th and ends on June 26th. The event is open for every individual who is a beginner and wishes to learn about that specific tech stack. \n" +
+            "For all 4 tech stacks, we took 2 sessions, and in almost every session, we had a dozen live viewers, and a few dozen who watched the recording of the livestream/recording. The general feedback was positive, people who attended the session were able to follow through and develop with us during the bootcamp. They were able to start building projects, and we achieved our mission, that is, to help beginners start with development.",
     },
 
 ]

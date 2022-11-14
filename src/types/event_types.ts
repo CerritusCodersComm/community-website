@@ -20,6 +20,7 @@ export interface EventProps {
     status: EVENT_STATUS;
     subEvents?: SubEventProps[];
     media?: any[];
+    summary: string
 }
 
 interface SpeakerSocials {
