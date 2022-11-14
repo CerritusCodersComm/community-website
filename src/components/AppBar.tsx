@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 export const AppBar: FC = () => {
   const [nav, setNav] = useState(true);
-  console.log(nav);
+
   return (
     <nav
       className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md ${
