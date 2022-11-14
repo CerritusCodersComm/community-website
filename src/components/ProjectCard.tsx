@@ -31,7 +31,7 @@ export const ProjectCard = ({
         <div className="card w-96 bg-white min-h-[260px] shadow-xl">
             <div className="p-6 text-left">
                 <div className="-mt-4 flex space-x-2 text-xl items-center">
-                    <span className="font-bold text-commColor" onClick={
+                    <span className="font-bold text-primary" onClick={
                         () => window.open(link, "_blank")
                     } style={{cursor: 'pointer'}}
                     >{idx + 1 + "."}&nbsp;&nbsp; {name}</span>

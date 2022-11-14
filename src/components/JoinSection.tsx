@@ -15,38 +15,38 @@ export const JoinSection: FC = () => {
             <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaDiscord}
-                className="text-commColor"
+                className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
                   window.open("https://discord.com/invite/WYFskJZY8z", "_blank");
                 }}
               />
-              <span className="text-commColor font-bold">Discord</span>
+              <span className="text-primary font-bold">Discord</span>
             </div>
             <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaTwitter}
-                className="text-commColor"
+                className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
                   window.open("https://www.twitter.com/cerrituscoders/", "_blank");
                 }}
               />
-              <span className="text-commColor font-bold">Twitter</span>
+              <span className="text-primary font-bold">Twitter</span>
             </div>
             <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaLinkedin}
-                className="text-commColor"
+                className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
                   window.open("https://www.linkedin.com/company/cerrituscoders/", "_blank");
                 }}
               />
-              <span className="text-commColor font-bold">LinkedIn</span>
+              <span className="text-primary font-bold">LinkedIn</span>
             </div>
             <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button

@@ -16,7 +16,7 @@ module.exports = {
       },
       colors: {
         lightPurple: "#CDB9F2",
-        commColor: "#365B6D",
+        primary: "#365B6D",
         hero: "#F1F6F0",
         line: "#6E61FF",
         underLine: "#DAC4FF",

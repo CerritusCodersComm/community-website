@@ -1,9 +1,8 @@
-import {MediaType, MediaSource} from "react-chrono/dist/models/TimelineMediaModel";
-
 export interface EventProps {
     idx: number;
     eventID: string;
     title: string;
+    colorfulTitle?: string;
     about: string;
     description: string;
     startingDate: string;
@@ -12,12 +11,16 @@ export interface EventProps {
     speaker: string;
     speakerImage: string
     speakerSocials: SpeakerSocials;
-    imageLink: string;
+    imagePath: any;
+    imageLink?: string;
     venue: string;
     venueLink: string;
     registrationLink?: string;
     scheduleArray?: Schedule[];
     status: EVENT_STATUS;
+    subEvents?: SubEventProps[];
+    media?: any[];
+    summary: string
 }
 
 interface SpeakerSocials {
@@ -44,20 +47,12 @@ export enum EVENT_STATUS {
 
 export interface SubEventProps {
     idx: number;
-    active?: boolean;
-    cardDetailedText?: string | string[];
-    cardSubtitle?: string;
-    cardTitle?: string;
     id?: string;
-    media?: Media;
-    position?: string;
     title?: string;
-    url?: string;
-    visible?: boolean;
-}
-
-interface Media {
-    name?: string;
-    source: MediaSource;
-    type: MediaType;
+    about?: string;
+    description?: string | string[];
+    date: string;
+    imagePath?: any;
+    venueLink?: string;
+    venue: string;
 }

@@ -7,7 +7,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 export const AppBar: FC = () => {
   const [nav, setNav] = useState(true);
-  console.log(nav);
+
   return (
     <nav
       className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md h-full py-10 md:py-0 md:px-0 sm:py-8 ${
@@ -25,7 +25,7 @@ export const AppBar: FC = () => {
                 <Link href={link.path}>
                   <li
                     key={index}
-                    className="font-bold transition duration-300 border-b-4 border-transparent hover:border-commColor xl:ml-8 text-xl xl:my-0"
+                    className="font-bold transition duration-300 border-b-4 border-transparent hover:border-primary xl:ml-8 text-xl xl:my-0"
                   >
                     {link.name}
                   </li>
@@ -46,7 +46,11 @@ export const AppBar: FC = () => {
         onClick={() => setNav((prev) => !prev)}
         className={`block md:pt-10 md:pr-6 sm:px-10 sm:py-2 md:py-4 md:px-0 md:mb-10 mx-5 ${nav && "xl:hidden"} z-10`}
       >
-        {!nav ? <FaTimes color="commColor" size={40} /> : <FaBars color="commColor" size={40} />}
+        {!nav ? (
+          <FaTimes color="primary" size={40} />
+        ) : (
+          <FaBars color="primary" size={40} />
+        )}
       </div>
       <div
         className={
@@ -67,7 +71,7 @@ export const AppBar: FC = () => {
                   <Link href={link.path}>
                     <li
                       key={index}
-                      className="font-bold transition duration-300 border-b-4 border-transparent hover:border-commColor xl:ml-8 text-xl xl:my-0"
+                      className="font-bold transition duration-300 border-b-4 border-transparent hover:border-primary xl:ml-8 text-xl xl:my-0"
                     >
                       {link.name}
                     </li>
