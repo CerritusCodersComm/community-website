@@ -120,6 +120,11 @@ export const EventCard = ({
                                 </button>
                             </div>) : null
                     }
+                    <div className="absolute bottom-0 left-0">
+                        <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
+                            <button className='m-auto btn btn-secondary'>Learn More</button>
+                        </Link>
+                    </div>
                 </div>
             </div>
         </div>
