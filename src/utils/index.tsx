@@ -14,7 +14,7 @@ export const ellipsisText = (text: String, limit: number) => {
 }
 
 export const openWebLink = (link: string) => {
-    window.open(link, "_blank")
+    window.open(link, "_blank noopener noreferrer")
 }
 
 export const getWebURL = (text: String) => {

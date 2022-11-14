@@ -2,6 +2,7 @@ import { AppProps } from "next/app";
 import { FC } from "react";
 import { AppBar } from "../components/AppBar";
 import {TempMobileView} from "../views/temp-mobile-view";
+import {JoinSection} from "../components/JoinSection";
 
 require("../styles/globals.css");
 
@@ -9,21 +10,21 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <>
       <div className="flex flex-col h-screen">
-        <div className="hidden lg:block relative mb-20">
+        <div className="block relative mb-20">
           <div className="absolute left-0 top-0 background-graphic-upper"></div>
           <div className="absolute left-0 right-0 z-20">
             <AppBar />
           </div>
         </div>
-        <div className="hidden lg:block z-10 mt-10">
+        <div className="block z-10 md:mt-[40px]">
           {/* @ts-ignore */}
           <Component {...pageProps} />
-          {/*<Footer/>*/}
+          <JoinSection/>
         </div>
 
-        <div className="block lg:hidden">
-          <TempMobileView/>
-        </div>
+        {/*<div className="block lg:hidden">*/}
+        {/*  <TempMobileView/>*/}
+        {/*</div>*/}
       </div>
     </>
   );

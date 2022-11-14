@@ -13,7 +13,6 @@ export const HomeView: FC = ({}) => {
             <HeroSection/>
             <AboutSection/>
             <EventSection />
-            <JoinSection/>
         </>
     );
 };
