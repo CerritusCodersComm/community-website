@@ -1,5 +1,5 @@
 import React, { FC } from "react";
-import { FaDiscord, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
 import Button from "./common/button";
 
 export const JoinSection: FC = () => {
@@ -10,53 +10,55 @@ export const JoinSection: FC = () => {
           Join Our Community
         </div>
         <div className="mx-auto text-[20px] tracking-wide leading-relaxed font-satoshi text-center text-[#7D7D7D] justify-center mb-4">
-          Join the community run solely by students, for students, focused on
-          development, open source, and much more.
-          <div className="justify-center w-auto h-auto flex items-center mt-8">
-            <div className="grid grid-rows-2 gap-y-5">
+          Join the community run solely by students, for students, focused on development, open source, and much more.
+          <div className="justify-center w-auto h-auto flex flex-col md:flex-row items-center mt-8">
+            <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaDiscord}
                 className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
-                  window.open(
-                    "https://discord.com/invite/WYFskJZY8z",
-                    "_blank"
-                  );
+                  window.open("https://discord.com/invite/WYFskJZY8z", "_blank");
                 }}
               />
               <span className="text-primary font-bold">Discord</span>
             </div>
-            <div className="grid grid-rows-2 gap-y-5">
+            <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaTwitter}
                 className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
-                  window.open(
-                    "https://www.twitter.com/cerrituscoders/",
-                    "_blank"
-                  );
+                  window.open("https://www.twitter.com/cerrituscoders/", "_blank");
                 }}
               />
               <span className="text-primary font-bold">Twitter</span>
             </div>
-            <div className="grid grid-rows-2 gap-y-5">
+            <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
               <Button
                 icon={FaLinkedin}
                 className="text-primary"
                 variant="join"
                 iconSize={40}
                 onClick={() => {
-                  window.open(
-                    "https://www.linkedin.com/company/cerrituscoders/",
-                    "_blank"
-                  );
+                  window.open("https://www.linkedin.com/company/cerrituscoders/", "_blank");
                 }}
               />
               <span className="text-primary font-bold">LinkedIn</span>
+            </div>
+            <div className="grid grid-rows-2 gap-y-2 md:gap-y-5">
+              <Button
+                icon={FaInstagram}
+                className="text-commColor"
+                variant="join"
+                iconSize={40}
+                onClick={() => {
+                  window.open("https://instagram.com/cerritus.coders?igshid=YmMyMTA2M2Y=", "_blank");
+                }}
+              />
+              <span className="text-commColor font-bold">Instagram</span>
             </div>
           </div>
         </div>

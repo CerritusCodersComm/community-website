@@ -6,14 +6,14 @@ export const navLinks = [
   },
   {
     name: "Programs",
-    path: "/Errorpage"
+    path: "/Errorpage",
   },
   {
     name: "Testimonials",
-    path: "/Errorpage"
+    path: "/Errorpage",
   },
   {
     name: "Team",
-    path: "/team"
-  }
+    path: "/team",
+  },
 ];

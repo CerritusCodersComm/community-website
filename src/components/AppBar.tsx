@@ -10,22 +10,17 @@ export const AppBar: FC = () => {
 
   return (
     <nav
-      className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md ${
+      className={`flex justify-between bg-white text-black font-grotesk font-bold drop-shadow-md h-full py-10 md:py-0 md:px-0 sm:py-8 ${
         !nav && "fixed w-[100%]"
       }`}
     >
-      <div className="mt-2 ml-10">
+      <div className="mt-2 ml-10 md:block hidden">
         <Image src={cerritusCodersLogo} height={107} width={214} />
       </div>
-      <div
-        className={`hidden xl:flex mr-3 xl:tems-center transition-all duration-500 ease-in`}
-      >
+      <div className={`hidden xl:flex mr-3 xl:tems-center transition-all duration-500 ease-in`}>
         {navLinks.map((link, index) => {
           return (
-            <div
-              className="xl:flex items-center space-x-1 m-2 p-2 cursor-pointer"
-              key={index}
-            >
+            <div className="xl:flex items-center space-x-1 m-2 p-2 cursor-pointer" key={index}>
               <ul>
                 <Link href={link.path}>
                   <li
@@ -41,15 +36,15 @@ export const AppBar: FC = () => {
         })}
         <div className="flex items-center">
           <button className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8">
-            Join Our Community
+            <Link href="/"> Join Our Community</Link>
           </button>
         </div>
       </div>
 
-      {/* navbar for small devices */}
+      {/* navbar for xsmall devices */}
       <div
         onClick={() => setNav((prev) => !prev)}
-        className={`block pt-10 pr-6 ${nav && "xl:hidden"} z-10`}
+        className={`block md:pt-10 md:pr-6 sm:px-10 sm:py-2 md:py-4 md:px-0 md:mb-10 mx-5 ${nav && "xl:hidden"} z-10`}
       >
         {!nav ? (
           <FaTimes color="primary" size={40} />
