@@ -30,7 +30,7 @@ export const AppBar: FC = () => {
                 <Link href={link.path}>
                   <li
                     key={index}
-                    className="font-bold transition duration-300 border-b-4 border-transparent hover:border-commColor xl:ml-8 text-xl xl:my-0"
+                    className="font-bold transition duration-300 border-b-4 border-transparent hover:border-primary xl:ml-8 text-xl xl:my-0"
                   >
                     {link.name}
                   </li>
@@ -52,9 +52,9 @@ export const AppBar: FC = () => {
         className={`block pt-10 pr-6 ${nav && "xl:hidden"} z-10`}
       >
         {!nav ? (
-          <FaTimes color="commColor" size={40} />
+          <FaTimes color="primary" size={40} />
         ) : (
-          <FaBars color="commColor" size={40} />
+          <FaBars color="primary" size={40} />
         )}
       </div>
       <div
@@ -76,7 +76,7 @@ export const AppBar: FC = () => {
                   <Link href={link.path}>
                     <li
                       key={index}
-                      className="font-bold transition duration-300 border-b-4 border-transparent hover:border-commColor xl:ml-8 text-xl xl:my-0"
+                      className="font-bold transition duration-300 border-b-4 border-transparent hover:border-primary xl:ml-8 text-xl xl:my-0"
                     >
                       {link.name}
                     </li>
