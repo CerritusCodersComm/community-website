@@ -16,7 +16,6 @@ export const EventCard = ({
                               speaker,
                               speakerSocials,
                               imagePath,
-                              imageLink,
                               venue,
                               venueLink,
                               registrationLink,
@@ -72,7 +71,7 @@ export const EventCard = ({
                         }
                     </div>
                 </div>
-                <img className='w-60 h-60' src={imageLink} alt={`${title} ${colorfulTitle} Image`}/>
+                <img className='w-60 h-60' src={imagePath} alt={`${title} ${colorfulTitle} Image`}/>
             </figure>
             <div className="p-6 bg-white text-left">
                 <div className="-mt-4">

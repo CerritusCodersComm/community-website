@@ -18,6 +18,7 @@ export const EventSection: FC = () => {
                         {events.map((props, idx) => (
                             <EventCard {...props} key={idx} idx={props.idx}/>
                         ))}
+
                     </div>
                 </div>
 
@@ -54,16 +55,16 @@ export const EventSection: FC = () => {
                         </div>
                     </div>
                 </div>
-                {
-                    events.length > 3 ? (
-                    <div className="p-5 flex flex-wrap justify-center mb-2">
-                        <button
-                            className="border-3 space-x-1 m-2 border-purple-400 rounded-full content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300">
-                            See more events
-                        </button>
-                    </div>
-                    ) : null
-                }
+                {/*{*/}
+                {/*    events.length > 3 ? (*/}
+                {/*    <div className="p-5 flex flex-wrap justify-center mb-2">*/}
+                {/*        <button*/}
+                {/*            className="border-3 space-x-1 m-2 border-purple-400 rounded-full content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300">*/}
+                {/*            See more events*/}
+                {/*        </button>*/}
+                {/*    </div>*/}
+                {/*    ) : null*/}
+                {/*}*/}
             </div>
         </div>
     );

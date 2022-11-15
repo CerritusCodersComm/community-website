@@ -77,8 +77,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             github: "https://github.com/cerrituscoderscomm",
             linkedin: "https://linkedin.com/company/cerrituscoders",
         },
-        imagePath: require("../../assets/images/events/hth/hacking-the-hacktoberfest-banner.png"),
-        imageLink: "https://drive.google.com/uc?export=view&id=1ZHNd0F4-qEa2GATMyFXw4j_1I9fx6inf",
+        imagePath: "/images/events/hth/hacking-the-hacktoberfest-banner.png",
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://docs.google.com/forms/d/e/1FAIpQLSfrk3X-CVHakn69h54sHbGiSmab8RKdCrit9dDSxVj6N6VbrA/viewform",
@@ -123,9 +122,9 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
                 },
             ],
         media: [
-            require("../../assets/images/events/hth/media/1.png"),
-            require("../../assets/images/events/hth/media/2.png"),
-            require("../../assets/images/events/hth/media/3.png"),
+            "/images/events/hth/media/1.png",
+            "/images/events/hth/media/2.png",
+            "/images/events/hth/media/3.png",
         ],
         summary:"Hacking the HACKTOBERFEST an event, meant to be an extension for Hacktoberfest, where we helped beginners get into open source, with a curated set of repositories to contribute to. In the 10+ repos we had, we got a total of 25+ valid PRs in this event and started the open source journey for dozens of beginners. We sent swags to the most prominent contributors for our event to give back to them for their contribution. We got a lot of positive feedback from the students who took part in this event and they stated that they learnt a lot of things by participating in our event."
     },
@@ -174,17 +173,16 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             github: "https://github.com/cerrituscoderscomm",
             linkedin: "https://linkedin.com/company/cerrituscoders",
         },
-        imagePath: require("../../assets/images/events/summer-bootcamp22/summer-bootcamp-banner.png"),
-        imageLink: "https://drive.google.com/uc?export=view&id=1qWFcZIFPXY2CM4MC_iWR-s4v6ZHAr2lG",
+        imagePath: "/images/events/summer-bootcamp22/summer-bootcamp-banner.png",
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",
         status: EVENT_STATUS.PAST,
         media: [
-            require("../../assets/images/events/summer-bootcamp22/media/1.png"),
-            require("../../assets/images/events/summer-bootcamp22/media/2.png"),
-            require("../../assets/images/events/summer-bootcamp22/media/3.png"),
-            require("../../assets/images/events/summer-bootcamp22/media/4.png"),
+            "/images/events/summer-bootcamp22/media/1.png",
+            "/images/events/summer-bootcamp22/media/2.png",
+            "/images/events/summer-bootcamp22/media/3.png",
+            "/images/events/summer-bootcamp22/media/4.png",
         ],
         summary:"The summer bootcamp was a 4 week long bootcamp with various sessions to encourage development in the community. It starts from June 4th and ends on June 26th. The event is open for every individual who is a beginner and wishes to learn about that specific tech stack. \n" +
             "For all 4 tech stacks, we took 2 sessions, and in almost every session, we had a dozen live viewers, and a few dozen who watched the recording of the livestream/recording. The general feedback was positive, people who attended the session were able to follow through and develop with us during the bootcamp. They were able to start building projects, and we achieved our mission, that is, to help beginners start with development.",
@@ -192,8 +190,8 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
     {
         idx: 2,
         eventID: "global-hack-weeks",
-        title: "Global Hack Weeks",
-        about: "Global Hack Weeks are your opportunity to spend a week learning, building, and growing with the community. Each Global Hack Week features workshops, technical live streams, mini events, and more to help you grow as a technologist.",
+        title: "Global Hack Weeks by MLH",
+        about: "Global Hack Weeks by MLH are your opportunity to spend a week learning, building, and growing with the community. Each Global Hack Week features workshops, technical live streams, mini events, and more to help you grow as a technologist.",
         description: `
 ## _We participated as a guild to get our members involved in events such as Global Hack Week to learn and build together._
 
@@ -222,8 +220,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             github: "https://github.com/cerrituscoderscomm",
             linkedin: "https://linkedin.com/company/cerrituscoders",
         },
-        imagePath: require("../../assets/images/events/ghw/ghw-banner.png"),
-        imageLink: "https://drive.google.com/uc?export=view&id=117G7ODhZ5-ltEqM_5DwM_B6_10uoMNdX",
+        imagePath: "/images/events/ghw/ghw-banner.png",
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",    //disabled anyway 
@@ -268,8 +265,8 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
                 }
             ],
         media: [
-            require("../../assets/images/events/ghw/media/1.png"),
-            require("../../assets/images/events/ghw/media/2.png"),
+            "/images/events/ghw/media/1.png",
+            "/images/events/ghw/media/2.png",
         ],
         summary:"In this event we encouraged all of our community members to participate in GHW INIT and GHW September, and we saw a lot of results. We were one of the top guilds in these two events. \n" +
             "Almost everyday, a lot of people in our community ended up in the top 5% of the hackers in these events, and every passing day, more people took part in the event to join the fun!",
@@ -278,7 +275,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         idx: 3,
         eventID: "cerritus-cafe",
         title: "Cerritus Cafe",
-        about: "In Cerritus Cafe, the people who take the sessions explore new domains and give their views on them and guide beginners so they can kickstart their journey in that domain.",
+        about: "Cerritus Cafe is an event to talk about tech, explore new domains, share projects, take sessions and guide beginners so they can kickstart their journey in that domain.",
         description: `
 ## _A relatively frequent, recurring event where a speaker talks about a trendy technical topic like game development to the audience in our Discord server or in a twitter space._
 **Cerritus Cafe** is a recurring event that occurs in our Discord Stage channel, or a Twitter Space, and in these sessions we will talk about popular technical topics and giving guidance on these topics so that beginners can understand how to start their journey with these topics, and build with the knowledge of these sessions.
@@ -304,8 +301,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
             github: "https://github.com/cerrituscoderscomm",
             linkedin: "https://linkedin.com/company/cerrituscoders",
         },
-        imagePath: require("../../assets/images/events/ccafe/ccafe-banner.png"),
-        imageLink: "https://drive.google.com/uc?export=view&id=1_om8llxYC4KyYK6BMX_MSR27LcO9kLbk",
+        imagePath: "/images/events/ccafe/ccafe-banner.png",
         venue: "Discord",
         venueLink: "https://discord.com/invite/WYFskJZY8z",
         registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",
@@ -326,10 +322,10 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
                 },
             ],
         media: [
-            require("../../assets/images/events/ccafe/media/1.png"),
-            require("../../assets/images/events/ccafe/media/2.png"),
-            require("../../assets/images/events/ccafe/media/3.png"),
-            require("../../assets/images/events/ccafe/media/4.png"),
+            "/images/events/ccafe/media/1.png",
+            "/images/events/ccafe/media/2.png",
+            "/images/events/ccafe/media/3.png",
+            "/images/events/ccafe/media/4.png",
         ],
         summary:"In Cerritus Cafe, the core members or one of the co-leaders takes a session on a trending topic so that beginners in the community can understand and work on that topic after that session.\
         In this event, our main goal is to teach the community members to the point where they can learn about that topic by themselves with ease, and build without issues."

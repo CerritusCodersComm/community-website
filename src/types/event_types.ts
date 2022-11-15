@@ -12,7 +12,6 @@ export interface EventProps {
     speakerImage: string
     speakerSocials: SpeakerSocials;
     imagePath: any;
-    imageLink?: string;
     venue: string;
     venueLink: string;
     registrationLink?: string;
