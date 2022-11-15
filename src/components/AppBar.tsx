@@ -36,7 +36,7 @@ export const AppBar: FC = () => {
         })}
         <div className="flex items-center">
           <button className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8">
-            <Link href="/"> Join Our Community</Link>
+            <Link href="#join"> Join Our Community</Link>
           </button>
         </div>
       </div>
@@ -82,12 +82,13 @@ export const AppBar: FC = () => {
           })}
         </div>
         <div className="flex justify-center bg-lightPurple">
-          <button
+          <a
+              href="#join"
             onClick={() => setNav((prev) => !prev)}
             className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8"
           >
             Join Our Community
-          </button>
+          </a>
         </div>
       </div>
     </nav>

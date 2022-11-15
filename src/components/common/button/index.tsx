@@ -8,7 +8,8 @@ import {IconType} from "react-icons";
  */
 type ButtonProps = {
     variant:
-        | 'join';
+        | 'join'
+        | 'join-small';
     className?: string;
     onClick?: (e: MouseEvent) => void;
     href?: string;
@@ -24,6 +25,9 @@ type ButtonProps = {
  */
 const variants = {
     join: "w-[100px] h-[100px] flex bg-[#f5f6fa] rounded-full mx-[30px] " +
+        "justify-center items-center opacity-80 hover:opacity-100 hover:text-[#365b9f] " +
+        "leading-[110px] shadow-[#dcdde1] shadow-md hover:shadow-xl hover:transition-all",
+    "join-small": "w-[48px] h-[48px] flex bg-[#f5f6fa] rounded-full mx-[30px] " +
         "justify-center items-center opacity-80 hover:opacity-100 hover:text-[#365b9f] " +
         "leading-[110px] shadow-[#dcdde1] shadow-md hover:shadow-xl hover:transition-all"
 };
