@@ -192,8 +192,8 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
     {
         idx: 2,
         eventID: "global-hack-weeks",
-        title: "Global Hack Weeks",
-        about: "Global Hack Weeks are your opportunity to spend a week learning, building, and growing with the community. Each Global Hack Week features workshops, technical live streams, mini events, and more to help you grow as a technologist.",
+        title: "Global Hack Weeks by MLH",
+        about: "Global Hack Weeks by MLH are your opportunity to spend a week learning, building, and growing with the community. Each Global Hack Week features workshops, technical live streams, mini events, and more to help you grow as a technologist.",
         description: `
 ## _We participated as a guild to get our members involved in events such as Global Hack Week to learn and build together._
 
@@ -278,7 +278,7 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         idx: 3,
         eventID: "cerritus-cafe",
         title: "Cerritus Cafe",
-        about: "In Cerritus Cafe, the people who take the sessions explore new domains and give their views on them and guide beginners so they can kickstart their journey in that domain.",
+        about: "Cerritus Cafe is an event to talk about tech, explore new domains, share projects, take sessions and guide beginners so they can kickstart their journey in that domain.",
         description: `
 ## _A relatively frequent, recurring event where a speaker talks about a trendy technical topic like game development to the audience in our Discord server or in a twitter space._
 **Cerritus Cafe** is a recurring event that occurs in our Discord Stage channel, or a Twitter Space, and in these sessions we will talk about popular technical topics and giving guidance on these topics so that beginners can understand how to start their journey with these topics, and build with the knowledge of these sessions.

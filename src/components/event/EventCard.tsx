@@ -34,7 +34,7 @@ export const EventCard = ({
 
     return (
         <div className="card w-96 shadow-xl bg-white text-[#464343]">
-            <figure className='relative'>
+            <figure className='relative border-black border-b-2 border-x-2'>
                 <div className='absolute flex w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
                     <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
                         <button className='m-auto btn btn-secondary'>Learn More</button>
