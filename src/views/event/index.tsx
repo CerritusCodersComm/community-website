@@ -1,7 +1,6 @@
 import React, {FC} from "react";
 import {openWebLink, parseDateWithYear} from "../../utils";
 import {EventProps} from "../../types/event_types";
-import Image from "next/image";
 import ReactMarkdown from "react-markdown";
 import {FaCalendarAlt, FaGithub, FaLinkedin, FaTwitter} from "react-icons/fa";
 import {SiGooglemaps} from "react-icons/si";
@@ -9,7 +8,7 @@ import {SubEvents} from "../../components/event/SubEvents";
 
 
 export const EventView: FC<EventProps> = (props) => {
-    const startingDate = props.startingDate ? parseDateWithYear(new Date(props.startingDate)) : "TBD"
+    const startingDate = props.startingDate ? parseDateWithYear(new Date(props.startingDate)) : null
     const endingDate = props.endingDate ? parseDateWithYear(new Date(props.endingDate)) : null
 
     const isEventEnded = () => {
@@ -49,8 +48,8 @@ export const EventView: FC<EventProps> = (props) => {
                             <div className="relative flex justify-center mb-8" data-aos="zoom-y-out"
                                  data-aos-delay="450">
                                 <div className="flex flex-col justify-center">
-                                    <Image className="mx-auto rounded-md" src={props.imagePath} width="768" height="432"
-                                           alt="Hero"/>
+                                    <img className="mx-auto rounded-md w-[768] h-[432]" src={props.imagePath}
+                                         alt={`${props.title} Image`}/>
                                 </div>
                             </div>
 
@@ -147,14 +146,22 @@ export const EventView: FC<EventProps> = (props) => {
 
                                     </div>
                                     <div className="flex space-x-2 justify-center items-center">
-                                        <FaCalendarAlt/>
                                         {
                                             endingDate ? (
-                                                <h2>
-                                                    {startingDate} - {endingDate}
-                                                </h2>
+                                                <>
+                                                    <FaCalendarAlt/>
+                                                    <h2>
+                                                        {startingDate} - {endingDate}
+                                                    </h2>
+                                                </>
                                             ) : (
-                                                <h2>{startingDate}</h2>
+                                                startingDate ? (
+                                                <>
+                                                    <FaCalendarAlt/>
+                                                    <h2>{startingDate}</h2>
+                                                </>
+                                            )
+                                                : null
                                             )
                                         }
                                         {props.timing ?
@@ -291,10 +298,11 @@ export const EventView: FC<EventProps> = (props) => {
                                         Event Media
                                     </h1>
                                 </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 md:gap-4 gap-2 ">
+                                <div className="grid grid-cols-1 md:grid-cols-2 place-items-center md:gap-4 gap-2 ">
                                     {
                                         props.media?.map((media, index) => (
-                                            <Image className="rounded-md" src={media} key={index}/>
+                                            <img className="rounded-md" alt={`${props.title} media`} src={media}
+                                                 key={index}/>
                                         ))
                                     }
                                 </div>

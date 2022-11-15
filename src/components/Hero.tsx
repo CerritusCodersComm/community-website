@@ -1,6 +1,6 @@
-import cerritusCodersLogo from "../assets/images/cerritus-coders-logo.png";
+import cerritusCodersLogo from "../../public/images/cerritus-coders-logo.png";
 import { FC, useState } from "react";
-import cerrituscollage from "../assets/images/cerritus_collage.png";
+import cerrituscollage from "../../public/images/cerritus_collage.png";
 import Image from "next/image";
 
 export const Hero: FC = () => {

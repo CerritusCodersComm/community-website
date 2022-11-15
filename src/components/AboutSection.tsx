@@ -1,6 +1,6 @@
 import Image from "next/image";
 import {FC} from "react";
-import AboutsectionImg from "../assets/images/AboutSectionImg.svg";
+import AboutsectionImg from "../../public/images/AboutSectionImg.svg";
 
 export const AboutSection: FC = () => {
     return (

@@ -1,5 +1,5 @@
 import {FC, useState} from "react";
-import logo from "../assets/images/cc_logo.png";
+import logo from "../../public/images/cc_logo.png";
 import Image from "next/image";
 import {FaBars, FaTimes} from "react-icons/fa";
 import Link from "next/link";
@@ -35,9 +35,9 @@ export const AppBar: FC = () => {
                     );
                 })}
                 <div className="flex items-center">
-                    <a className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8">
+                    <button className="border-3 space-x-1 m-2 border-purple-400 rounded-full p-2 content-center h-11 items-center justify-center bg-lightPurple font-bold hover:bg-purple-500 px-6 bg-transition duration-300 xl:ml-8">
                         <Link href="#join"> Join Our Community</Link>
-                    </a>
+                    </button>
                 </div>
             </div>
 
