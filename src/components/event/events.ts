@@ -189,5 +189,149 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         summary:"The summer bootcamp was a 4 week long bootcamp with various sessions to encourage development in the community. It starts from June 4th and ends on June 26th. The event is open for every individual who is a beginner and wishes to learn about that specific tech stack. \n" +
             "For all 4 tech stacks, we took 2 sessions, and in almost every session, we had a dozen live viewers, and a few dozen who watched the recording of the livestream/recording. The general feedback was positive, people who attended the session were able to follow through and develop with us during the bootcamp. They were able to start building projects, and we achieved our mission, that is, to help beginners start with development.",
     },
+    {
+        idx: 2,
+        eventID: "global-hack-weeks",
+        title: "Global Hack Weeks",
+        about: "Global Hack Weeks are your opportunity to spend a week learning, building, and growing with the community. Each Global Hack Week features workshops, technical live streams, mini events, and more to help you grow as a technologist.",
+        description: `
+## _We participated as a guild to get our members involved in events such as Global Hack Week to learn and build together._
 
+**Global Hack Week** is a week long event with workshops, technical livestreams, and mini events, to encourage development together in the community.
+The event is open for everyone over the age of 13, no matter their experience or tech stack.
+
+## What happened in this event?
+
+You can expect to complete challenges, hear about BIG community announcements, chat at hacker hangouts, enjoy fun live sessions, build technical projects, and make new memories. 
+We took a few sessions on GHW to get beginners involved in these events, as shown below, in the event media.
+
+## What will you get out of it?
+
+You will get to learn and explore different tech domains with the technical live streams sessions. You will get hands-on experience on mini-projects. You will get to work alongside others folks and help each other grow.
+
+## Who can apply?
+All are welcome to attend and participate in Global Hack Week no matter your experience level and student status. Hundreds of hackers who have never coded before will attend GHW. This event is geared for folks learning to code as well as experts! Minors 13 and over are welcome to attend with a parent's permission.
+
+## Code of Conduct
+Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendees. You can read the code of conduct from [here](https://github.com/CerritusCodersComm/.github/blob/main/CodeOfConduct.md).
+`,
+        speaker: "Cerritus Coders",
+        speakerImage: "https://avatars.githubusercontent.com/cerrituscoderscomm",
+        speakerSocials: {
+            twitter: "https://twitter.com/cerrituscoders",
+            github: "https://github.com/cerrituscoderscomm",
+            linkedin: "https://linkedin.com/company/cerrituscoders",
+        },
+        imagePath: require("../../assets/images/events/ghw/ghw-banner.png"),
+        imageLink: "https://drive.google.com/uc?export=view&id=117G7ODhZ5-ltEqM_5DwM_B6_10uoMNdX",
+        venue: "Discord",
+        venueLink: "https://discord.com/invite/WYFskJZY8z",
+        registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",    //disabled anyway 
+        status: EVENT_STATUS.PAST,
+        subEvents:
+            [
+                {
+                    idx: 0,
+                    id: "ghw_init",
+                    date: "July, 2022",
+                    imagePath: "https://uploads-ssl.webflow.com/62865e59eaf6960ed5d6a8f8/62e93faf9fef87de3e9e479f_Sept-generic_website-header-short.png",
+                    title: "GHW INIT",
+                    venueLink: "https://ghw.mlh.io/init",
+                    about: "A weeklong event, filled with technical livestreams and learning!",
+                    description: `INIT is a celebration for the start of the 2023 Hackathon Season! You can expect to complete challenges, hear about BIG community announcements, chat at hacker hangouts, enjoy fun live sessions, build technical projects, and make new memories.`,
+                    venue: "MLH",
+                },
+                {
+                    idx: 1,
+                    id: "ghw_sept_twitter",
+                    date: "September, 2022",
+                    imagePath: "https://drive.google.com/uc?export=view&id=1oDNn2Ck7A5TASd3r-l_KEYWjo2a5q50C",
+                    title: "Understanding MLH : GHW",
+                    about: "Twitter Space Live: 8pm",
+                    venueLink: "https://twitter.com/cerrituscoders",
+                    description: "This twitter space focuses on why events like GHW September are so\
+                    important for beginners, and we encourage everyone to participate in it, and also how to participate in the same.",
+                    venue: "Twitter",
+
+                },
+                {
+                    idx: 2,
+                    id: "ghw_sept",
+                    date: "September, 2022",
+                    imagePath: "https://drive.google.com/uc?export=view&id=1kq_J-KoqzM0lbhbehx90XYPrue9dsVDF",
+                    title: "GHW September",
+                    about: "A weeklong event, filled with technical livestreams and learning!",
+                    venueLink: "https://ghw.mlh.io/sept",
+                    description: "Global Hack Week September is our beginner-friendly hacker festival and we want you to join us. You can expect to complete challenges, chat at hacker hangouts, enjoy fun live sessions, build technical projects, and make new memories.",
+                    venue: "MLH",
+
+                }
+            ],
+        media: [
+            require("../../assets/images/events/ghw/media/1.png"),
+            require("../../assets/images/events/ghw/media/2.png"),
+        ],
+        summary:"In this event we encouraged all of our community members to participate in GHW INIT and GHW September, and we saw a lot of results. We were one of the top guilds in these two events. \n" +
+            "Almost everyday, a lot of people in our community ended up in the top 5% of the hackers in these events, and every passing day, more people took part in the event to join the fun!",
+    },
+    {
+        idx: 3,
+        eventID: "cerritus-cafe",
+        title: "Cerritus Cafe",
+        about: "In Cerritus Cafe, the people who take the sessions explore new domains and give their views on them and guide beginners so they can kickstart their journey in that domain.",
+        description: `
+## _A relatively frequent, recurring event where a speaker talks about a trendy technical topic like game development to the audience in our Discord server or in a twitter space._
+**Cerritus Cafe** is a recurring event that occurs in our Discord Stage channel, or a Twitter Space, and in these sessions we will talk about popular technical topics and giving guidance on these topics so that beginners can understand how to start their journey with these topics, and build with the knowledge of these sessions.
+
+## What will happen in the Cerritus Cafe?
+
+In the Cerritus Cafe, the speaker will give a detailed explanation of the tech stack itself, before going into detail into what they learnt, to how they learnt that information, to what they found interesting, to tips for the beginners to follow, to make their learning process simpler and better.
+
+## What will you get out of it?
+
+Everyone who speaks in these sessions has at least a week of experience in that tech stack, and there are often times when you wish you knew something earlier, since it would have sped up your learning process a lot. We intend to provide you with this knowledge so you can advance in your journey a lot faster!
+
+## What if I cannot join?
+The timings of the each session will be preplanned and discussed in the community. The video recordings will also be available on our youtube channel.
+
+## Code of Conduct
+Cerritus Coders is an inclusive community of students. We follow our code of conduct for every event and expect the same from every attendees. You can read the code of conduct from [here](https://github.com/CerritusCodersComm/.github/blob/main/CodeOfConduct.md).
+`,
+        speaker: "Cerritus Coders",
+        speakerImage: "https://avatars.githubusercontent.com/cerrituscoderscomm",
+        speakerSocials: {
+            twitter: "https://twitter.com/cerrituscoders",
+            github: "https://github.com/cerrituscoderscomm",
+            linkedin: "https://linkedin.com/company/cerrituscoders",
+        },
+        imagePath: require("../../assets/images/events/ccafe/ccafe-banner.png"),
+        imageLink: "https://drive.google.com/uc?export=view&id=1_om8llxYC4KyYK6BMX_MSR27LcO9kLbk",
+        venue: "Discord",
+        venueLink: "https://discord.com/invite/WYFskJZY8z",
+        registrationLink: "https://forms.gle/a4yEV6uGKMy1CYnx8",
+        status: EVENT_STATUS.PAST,
+        subEvents:
+            [
+                {
+                    idx: 0,
+                    id: "godot_game_dev",
+                    date: "12th November, 2022</br> 8PM",
+                    imagePath: "https://drive.google.com/uc?export=view&id=1ubhLrXfjEHbF_92ydozvNpEHOKJopSQ8",
+                    title: "Basic 2D Platformer Game Development in Godot",
+                    venueLink: "https://www.youtube.com/watch?v=FthPVQvWgCY",
+                    about: "YouTube Live Stream: 8pm",
+                    description: `I'm going to be talking about Godot in general, then I'm going to talk about its UI, then:
+                    I will be making a 2D platformer game, with a small map, a player and an enemy, with basic scripts in each, having a few signals.`,
+                    venue: "YouTube",
+                },
+            ],
+        media: [
+            require("../../assets/images/events/ccafe/media/1.png"),
+            require("../../assets/images/events/ccafe/media/2.png"),
+            require("../../assets/images/events/ccafe/media/3.png"),
+            require("../../assets/images/events/ccafe/media/4.png"),
+        ],
+        summary:"In Cerritus Cafe, the core members or one of the co-leaders takes a session on a trending topic so that beginners in the community can understand and work on that topic after that session.\
+        In this event, our main goal is to teach the community members to the point where they can learn about that topic by themselves with ease, and build without issues."
+    }
 ]

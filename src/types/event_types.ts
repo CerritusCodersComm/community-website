@@ -5,8 +5,8 @@ export interface EventProps {
     colorfulTitle?: string;
     about: string;
     description: string;
-    startingDate: string;
-    endingDate: string;
+    startingDate?: string;
+    endingDate?: string;
     timing?: string;
     speaker: string;
     speakerImage: string
