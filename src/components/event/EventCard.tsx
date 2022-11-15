@@ -29,7 +29,7 @@ export const EventCard = ({
         else return EVENT_STATUS.PAST
     }
 
-    const eventStartingDate = startingDate ? parseDate(new Date(startingDate)) : "TBD"
+    const eventStartingDate = startingDate ? parseDate(new Date(startingDate)) : "\u00a0"
     const eventEndingDate = endingDate ? parseDate(new Date(endingDate)) : null
 
     return (
