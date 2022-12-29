@@ -1,6 +1,7 @@
 export interface EventProps {
     idx: number;
-    eventID: string;
+    eventID?: string;
+    eventUrl?: string;
     title: string;
     colorfulTitle?: string;
     about: string;

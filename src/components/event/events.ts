@@ -329,5 +329,33 @@ Cerritus Coders is an inclusive community of students. We follow our code of con
         ],
         summary:"In Cerritus Cafe, the core members or one of the co-leaders takes a session on a trending topic so that beginners in the community can understand and work on that topic after that session.\
         In this event, our main goal is to teach the community members to the point where they can learn about that topic by themselves with ease, and build without issues."
-    }
+    },
+    {
+        idx: 4,
+        eventID:"cerritus-connect",
+        eventUrl: "http://connect.cerrituscoders.tech/",
+        title: "Cerritus Connect",
+        about: "Cerritus Connect is a fun-filled blend of informative talks, panel discussions, networking sessions, and much more!",
+        description: `
+## _This connect will be the celebration of Community's 1-year completion in December. We will be talking about our journey, past events, and future plans. Overall, it will be a place for the community to meet and hang out together._ <a>123</a>`,
+        speaker: "Cerritus Coders",
+        speakerImage: "https://avatars.githubusercontent.com/cerrituscoderscomm",
+        speakerSocials: {
+            twitter: "https://twitter.com/cerrituscoders",
+            github: "https://github.com/cerrituscoderscomm",
+            linkedin: "https://linkedin.com/company/cerrituscoders",
+        },
+        imagePath: "/images/events/cconnect/cconnect.jpg",
+        venue: "DevX",
+        venueLink: "https://devx.work/",
+        registrationLink: "https://forms.gle/BTRNKfRqGf4KGEx29",
+        status: EVENT_STATUS.PAST,
+        media: [
+            "/images/events/cconnect/media/1.jpg",
+            "/images/events/cconnect/media/2.jpg",
+            "/images/events/cconnect/media/3.jpg",
+            "/images/events/cconnect/media/4.jpg",
+        ],
+        summary:"A meetup full of learning, networking, and celebrating our community! Cerritus Connect is an in-person tech meetup where the community comes together to learn, explore,  network, contribute and celebrate our community! Connect is a fun-filled blend of informative talks, panel discussions, networking sessions, and much more!"
+    },
 ]

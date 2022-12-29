@@ -30,7 +30,7 @@ export const EventSection: FC = () => {
                             <div className="flex space-x-2 items-center">
                                 <MdPeopleAlt/>
                                 <p>
-                                    <b>350+</b>
+                                    <b>440+</b>
                                 </p>
                             </div>
                             <span>Participants</span>

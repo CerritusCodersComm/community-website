@@ -6,6 +6,7 @@ import {EVENT_STATUS, EventProps} from "../../types/event_types";
 
 export const EventCard = ({
                               eventID,
+                              eventUrl,
                               title,
                               colorfulTitle,
                               about,
@@ -35,9 +36,19 @@ export const EventCard = ({
         <div className="card w-96 shadow-xl bg-white text-[#464343]">
             <figure className='relative'>
                 <div className='absolute flex w-60 h-60 transition-opacity opacity-0 bg-slate-700 hover:opacity-90'>
-                    <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
-                        <button className='m-auto btn btn-secondary'>Learn More</button>
-                    </Link>
+                    {
+                        eventUrl ? (
+                        <Link href={eventUrl}>
+                            <button className='m-auto btn btn-secondary'>Learn More</button>
+                        </Link>
+                        )
+                    : (
+                        <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
+                            <button className='m-auto btn btn-secondary'>Learn More</button>
+                        </Link>
+                    )
+   
+                }
                 </div>
                 <div
                     className='absolute flex w-full h-10 items-center text-white text-[18px] font-bold bottom-0'>
@@ -120,9 +131,18 @@ export const EventCard = ({
                             </div>) : null
                     }
                     <div className="absolute bottom-0 left-0">
+                    {
+                        eventUrl ? (
+                        <Link href={eventUrl}>
+                            <button className='m-auto btn btn-secondary'>Learn More</button>
+                        </Link>
+                        )
+                    : (
                         <Link href={`/events/[eventID]`} as={`/events/${getWebURL(eventID)}`} passHref>
                             <button className='m-auto btn btn-secondary'>Learn More</button>
                         </Link>
+                    )   
+                }
                     </div>
                 </div>
             </div>
